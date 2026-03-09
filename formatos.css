@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+    background: #f5f7fb;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.topo {
+    background: #0a4d8c;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cabecalho-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    background-color: #07345f;
+}
+
+.principal {
+    padding: 30px 0 40px;
+    display: grid;
+    gap: 24px;
+}
+
+.destaque {
+    background: #ffffff;
+    border: 1px solid #dde4ee;
+    border-left: 6px solid #0a4d8c;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.tag {
+    display: inline-block;
+    background: #e3eefc;
+    color: #07345f;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 14px;
+    background: #0a4d8c;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.grade-cards,
+.grade-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #dde4ee;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.categoria {
+    width: fit-content;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.categoria.fofoca {
+    background: #a32653;
+}
+
+.categoria.tecnologia {
+    background: #1d6f42;
+}
+
+.categoria.esporte {
+    background: #b34f00;
+}
+
+.meta {
+    font-size: 0.9rem;
+}
+
+.rodape {
+    background: #0f1d2e;
+    color: #e8edf8;
+    padding: 18px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .cabecalho-conteudo h1 {
+        font-size: 1.25rem;
+    }
+
+    .destaque h2,
+    .secao h2,
+    .noticia-completa h2 {
+        font-size: 1px;
+        line-height: 1.35;
+    }
+
+    .grade-cards,
+    .grade-categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .botao {
+        width: 100%;
+        text-align: center;
+    }
+}
