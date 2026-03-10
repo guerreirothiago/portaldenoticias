@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Corajosos</title>
+    <title>News on air</title>
     <link rel="stylesheet" href="formatos.css">
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
 </head>
 <body>
-    <header class="topo">
-        <div class="container cabecalho-conteudo">
-            <h1>Portal Corajosos</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a class="ativo" href="#home">Home</a></li>
-                    <li><a href="#noticia">Página da Notícia</a></li>
-                    <li><a href="#categorias">Categorias</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <!-- Ideial para colocar a logo -->
+        <a href="#" class="brand">
+          <strong>News on air</strong>
+        </a>
+
+        <!-- Menu no estilo hamburger -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Navegação -->
+        <nav class="nav">
+          <div class="nav-header">
+            <h2>Menu</h2>
+            <label for="menu-toggle" class="close-menu">&times;</label>
+          </div>
+
+          <!-- Links do menu -->
+          <a href="index.html" class="active">Home</a>
+          <a href="#">Página da Notícia</a>
+          <a href="#">Categorias</a>
+        </nav>
+      </div>
     </header>
 
     <main class="container principal">
@@ -36,7 +53,7 @@
             <div class="grade-cards">
                 <article class="card">
                     <span class="categoria tecnologia">Tecnologia</span>
-                    <h3>CETAM oferece curso de segurança digital</h3>
+                    <h3>Startup brasileira lança app de segurança digital</h3>
                     <p>Aplicativo usa inteligência artificial para alertar sobre golpes em tempo real.</p>
                 </article>
                 <article class="card">
@@ -76,7 +93,7 @@
 
     <footer class="rodape">
         <div class="container">
-            <p>&copy; 2026 Portal Corajosos. Todos os direitos reservados.</p>
+            <p>&copy; 2026 News on air. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
